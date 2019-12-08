@@ -1,15 +1,15 @@
 import React from 'react';
 import './../App.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Header from './Header'
 
-const Index = () => (
-  <div>
-    <div><Link to='/'>Index</Link></div>
-    <div><Link to='/profile'>Profile</Link></div>
-    <div><Link to='/skill'>Skill</Link></div>
-    <div><Link to='/works'>Works</Link></div>
-    <div><Link to='/contact'>Contact</Link></div>
-  </div>
-)
+const Index = () => {
+
+  return (
+    <div>
+      <Header />
+
+    </div>
+  );
+}
 
 export default Index
