@@ -1,24 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap');
+
 body {
   height: 100%;
   width: 100%;
-  background-color: #f0f0f0;
   min-width: 340px;
+  background-color: #fafafa;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-padding{
+  padding: 0 30px;
 }
 
 .header-container {
-  position: fixed;
   top: 0;
-  width: 100%;
   z-index: 100;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: rgba(255,255,255,.7);
 }
 
 .header-link {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 10px;
+  border-bottom: solid 1.5px;
+  border-color: #808080;
+}
+
+.header-link p {
+  margin: 0;
+  transition: 0.3s;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+.header-link p:hover,
+.header-link p:focus {
+  transform: translateY(-4px);
 }
 
 /*-- about --*/
@@ -58,6 +84,7 @@ body {
   padding-top: 40px;
   font-size: 1.6em;
   font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-main-text {

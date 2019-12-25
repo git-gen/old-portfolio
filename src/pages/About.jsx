@@ -1,13 +1,16 @@
 import React from 'react';
 import './../App.css';
 import Header from './Header';
-import { useSpring, animated } from 'react-spring';
+import {
+  useSpring,
+  animated
+} from 'react-spring';
 
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1];
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.2];
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const About = () => {
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 400, friction: 10 } }))
+  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 170, friction: 26 } }))
 
   return (
     <div>
