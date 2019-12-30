@@ -1,12 +1,14 @@
 import React from 'react';
 import './../App.css';
-import Header from './Header'
+import Header from '../components/Header';
+import Title from '../components/Title';
 import TechBlog from './../assets/tech-blog.jpg';
 
 const Works = () => (
   <div>
     <Header />
-    <div className="works-title">Works</div>
+    <Title text={'Works'} />
+    <div className="page-title"><span>Works</span></div>
     <div className="works-main-padding">
       <div className="works-main-container">
 

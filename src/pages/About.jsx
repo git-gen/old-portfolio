@@ -1,38 +1,63 @@
 import React from 'react';
 import './../App.css';
-import Header from './Header';
-import {
-  useSpring,
-  animated
-} from 'react-spring';
-
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.2];
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+import Header from '../components/Header';
+import Title from '../components/Title';
 
 const About = () => {
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 170, friction: 26 } }))
 
   return (
     <div>
       <Header />
-      <div className="about-title">About Me</div>
+      <Title text={'About'} />
+      <div className="page-title"><span>About Me</span></div>
       <div className="about-main-padding">
         <div className="about-main-container">
           <div className="about-main-image-parent">
-            <animated.div
+            <div
               className="about-main-image"
-              onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-              onMouseLeave={() => set({ xys: [0, 0, 1] })}
-              style={{ transform: props.xys.interpolate(trans) }}
             />
           </div>
           <div className="about-main-title">Developer Genki</div>
           <div className="about-main-text">
             <p>専門分野はbackend</p>
-            <p>趣味：開発・スケッチ・釣り・ゲーム etc...</p>
-            <p>最近の趣味は風景のスケッチ</p>
-            <p>欲しいものはブログを書く文章力とデザインセンス</p>
           </div>
+        </div>
+      </div>
+      <div className="about-contact-title">
+        <span>Contact</span>
+      </div>
+      <div className="about-contact-padding">
+        <div className="about-contact-container">
+          <a
+            href=""
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div className="about-contact">
+              <p>Form</p>
+              <div className="about-contact-form" />
+            </div>
+          </a>
+          <a
+            href="https://jp.linkedin.com/in/%E5%85%83%E8%B2%B4-%E6%B8%A1%E9%82%89-651775195"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div className="about-contact">
+              <p>LinkedIn</p>
+              <div className="about-contact-linkedin" />
+            </div>
+          </a>
+          <a
+            href="https://twitter.com/developer_gen"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div className="about-contact">
+              <p>Twitter</p>
+              <div className="about-contact-twitter" />
+            </div>
+          </a>
         </div>
       </div>
     </div >
