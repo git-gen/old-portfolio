@@ -1,15 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './../App.css';
-import Header from '../components/Header';
-import Title from '../components/Title';
 
 const Index = () => {
 
   return (
     <div>
-      <Header />
-      <Title text={'Home'} />
       <div className="page-title"><span>Home</span></div>
       <div className="home-main-padding">
         <div className="home-main-container">

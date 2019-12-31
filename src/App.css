@@ -5,7 +5,7 @@ body {
   height: 100%;
   width: 100%;
   min-width: 340px;
-  background-color: #fafafa;
+  background: linear-gradient(to bottom, #fafafa, #a2d5f2);
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -51,6 +51,13 @@ a:focus {
   border-color: #ff7e67;
 }
 
+.footer {
+  background-color: #07689f;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
 /*-- header --*/
 .header-container {
   position: sticky;
@@ -59,7 +66,7 @@ a:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .header-link {
@@ -80,15 +87,10 @@ a:focus {
   right: 0;
 }
 
-.bue {
-  position: absolute;
-  width: 100%;
-}
-
 .header-link:hover::before,
 .header-link:focus::before {
   height: 100%;
-  background: linear-gradient(to bottom, #fff, #a2d5f2);
+  background: linear-gradient(to bottom, #fafafa, #a2d5f2);
 }
 
 .header-link p {
@@ -117,8 +119,9 @@ a:focus {
   height: calc(100vh - 200px);
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 33px;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .home-main-container {
     grid-template-columns: 1fr;
   }
@@ -223,7 +226,7 @@ a:focus {
   grid-template-rows: 200px 100px 1fr;
   max-width: 1140px;
   padding: 30px;
-  background-color: #fff;
+  background-color: #fafafa;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
@@ -249,10 +252,13 @@ a:focus {
 .about-main-text {
   grid-column: 2/3;
   grid-row: 1/3;
-  padding: 10px;
+  padding: 0 10px;
+}
+.about-main-text p {
+  margin: 0;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .about-main-image-parent {
     grid-column: 1/3;
     grid-row: 1/2;
@@ -319,10 +325,25 @@ a:focus {
   padding: 0 30px;
 }
 
+.about-contact {
+  padding: 20px;
+  transition: .3s;
+}
 .about-contact p {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 767px) {
+  .about-contact{
+    padding: 20px 0;
+  }
+}
+
+.about-contact:hover,
+.about-contact:focus {
+  background-color:rgba(255,255,255,0.3);
 }
 
 .about-contact-form {
@@ -347,30 +368,62 @@ a:focus {
 }
 
 /*-- skill --*/
-.skill-main-padding {
+.skill-padding {
   padding: 0 20px 20px;
+}
+
+.skill-container {
+  background-color: #fafafa;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+
+.skill-text-container {
+  display: grid;
+  grid-template-columns: minmax(70px, 1fr) 2fr;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 30px 0;
+}
+
+.skill-text-rate {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.skill-text-star {
+  display: inline-block;
+  background-image: url(./assets/skill-star.svg);
+  height: 15px;
+  width: 15px;
+  margin: 0 1px;
 }
 
 .skill-main-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr minmax(130px, 1fr) 1fr minmax(130px, 1fr) 1fr minmax(130px, 1fr);
   max-width: 1140px;
-  padding: 30px;
-  background-color: #fff;
+  padding: 10px 30px 30px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
 }
 
 .skill-main-title {
-  grid-column: 1/3;
+  grid-column: 1/7;
   text-align: center;
+  padding: 20px 0 10px;
+}
+
+.skill-main-title span {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.4em;
+  font-weight: 600;
+  border-bottom: solid 2px;
+  border-color: #ff7e67;
+  padding: 0 30px;
 }
 
 .skill-main-item {
-  grid-column: 1/2;
   text-align: right;
   padding: 10px;
   font-size: 1.3em;
@@ -378,8 +431,31 @@ a:focus {
 }
 
 .skill-main-rating {
-  grid-column: 2/3;
   padding: 10px;
+}
+@media screen and (max-width: 991px) {
+  .skill-main-container {
+    grid-template-columns: 1fr minmax(130px, 1fr) 1fr minmax(130px, 1fr);
+  }
+  .skill-main-title {
+    grid-column: 1/5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skill-main-container {
+    grid-template-columns: 1fr minmax(130px, 1fr);
+  }
+  .skill-main-title {
+    grid-column: 1/3;
+  }
+}
+
+.rating-star {
+  display: inline-block;
+  background-image: url(./assets/skill-star.svg);
+  height: 29px;
+  width: 29px;
+  margin: 0 3px;
 }
 
 /*-- works --*/
@@ -395,7 +471,7 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .works-main-container {
     grid-template-columns: 1fr;
   }
@@ -403,7 +479,7 @@ a:focus {
 
 .works-main-project {
   margin: 20px;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .works-main-project-img {

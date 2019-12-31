@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import Title from './components/Title';
+import Footer from './components/Footer';
 import Index from './pages/Index';
 import About from './pages/About';
 import Skill from './pages/Skill';
@@ -7,22 +10,41 @@ import Works from './pages/Works';
 
 const index = () => {
   return (
-    <Index />
+    <div>
+      <Header />
+      <Title text={'Home'} />
+      <Index />
+    </div>
   );
 }
 const about = () => {
   return (
-    <About />
+    <div>
+      <Header />
+      <Title text={'About'} />
+      <About />
+      <Footer />
+    </div>
   );
 }
 const skill = () => {
   return (
-    <Skill />
+    <div>
+      <Header />
+      <Title text={'Skill'} />
+      <Skill />
+      <Footer />
+    </div>
   );
 }
 const works = () => {
   return (
-    <Works />
+    <div>
+      <Header />
+      <Title text={'Works'} />
+      <Works />
+      <Footer />
+    </div>
   );
 }
 

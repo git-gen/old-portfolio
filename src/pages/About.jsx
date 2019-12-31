@@ -1,14 +1,10 @@
 import React from 'react';
 import './../App.css';
-import Header from '../components/Header';
-import Title from '../components/Title';
 
 const About = () => {
 
   return (
     <div>
-      <Header />
-      <Title text={'About'} />
       <div className="page-title"><span>About Me</span></div>
       <div className="about-main-padding">
         <div className="about-main-container">
@@ -19,7 +15,18 @@ const About = () => {
           </div>
           <div className="about-main-title">Developer Genki</div>
           <div className="about-main-text">
-            <p>専門分野はbackend</p>
+            <p>
+              はじめまして！<br />
+              高校・大学で情報工学を学び、<br />
+              自社開発を行なっている一部上場企業に新卒入社しました。<br />
+              それからWebエンジニアとして働き始め、<br />
+              業務では課金機能の実装や機能改修などに携わりました。<br />
+              趣味でも開発を行なっていて、<br />
+              大学時代はiOS・Androidアプリを作成<br />
+              就職後もVPSを借りて複数のWebアプリを作っています。<br />
+              バックエンド・フロントエンド・インフラと幅広く触っていますが、<br />
+              専門分野はバックエンドエンジニアとしてやらせてもらっています。<br />
+            </p>
           </div>
         </div>
       </div>
