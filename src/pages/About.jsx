@@ -36,7 +36,7 @@ const About = () => {
       <div className="about-contact-padding">
         <div className="about-contact-container">
           <a
-            href=""
+            href="https://www.yoshinani.com/contact"
             target="_blank"
             rel="noreferrer noopener"
           >

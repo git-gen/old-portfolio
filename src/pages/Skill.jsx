@@ -35,7 +35,7 @@ const Skill = () => (
           <div className="skill-main-item">Golang</div>
           <div className="skill-main-rating"><Rating rate={1} /></div>
           <div className="skill-main-item">C#</div>
-          <div className="skill-main-rating"><Rating rate={2} /></div>
+          <div className="skill-main-rating"><Rating rate={1} /></div>
 
           <div className="skill-main-title"><span>Frontend</span></div>
           <div className="skill-main-item">HTML</div>
@@ -68,7 +68,7 @@ const Skill = () => (
           <div className="skill-main-rating"><Rating rate={3} /></div>
           <div className="skill-main-item">Nginx</div>
           <div className="skill-main-rating"><Rating rate={2} /></div>
-          <div className="skill-main-item">AWS</div>
+          <div className="skill-main-item">EC2・RDS</div>
           <div className="skill-main-rating"><Rating rate={2} /></div>
 
         </div>

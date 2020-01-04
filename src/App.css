@@ -5,8 +5,11 @@ body {
   height: 100%;
   width: 100%;
   min-width: 340px;
-  background: linear-gradient(to bottom, #fafafa, #a2d5f2);
+  background-image: url(./assets/background.jpg);
   font-family: 'Noto Sans JP', sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a,
@@ -508,4 +511,18 @@ a:focus {
   font-size: 1em;
   color: #606060;
   margin: 0;
+}
+
+.works-main-project-tag {
+  padding-top: 10px;
+}
+
+.works-main-project-tag div {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #505050;
+  font-size: .8em;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 8%;
 }
