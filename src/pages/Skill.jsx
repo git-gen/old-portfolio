@@ -1,9 +1,11 @@
 import React from 'react';
 import './../App.css';
-import Rating from '../components/Rating'
+import Rating from '../components/Rating';
+import Title from '../components/Title';
 
 const Skill = () => (
   <div>
+    <Title text={'Skill'} />
     <div className="page-title"><span>Skill</span></div>
     <div className="skill-padding">
       <div className="skill-container">

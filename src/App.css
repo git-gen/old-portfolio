@@ -21,7 +21,7 @@ a:focus {
 
 .title {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #ff7e67;
   transition: .5s;
@@ -30,9 +30,10 @@ a:focus {
 }
 
 .title-text {
-  position: absolute;
-  top: 40%;
+  position: fixed;
+  top: 0;
   left: 50%;
+  margin-top: 400px;
   color: #fff;
   transform: translateY(-50%) translateX(-50%);
   font-family: 'Josefin Sans', sans-serif;
@@ -42,7 +43,7 @@ a:focus {
 
 .page-title {
   text-align: center;
-  margin: 50px 0 30px;
+  padding: 80px 0 30px;
 }
 
 .page-title span {
@@ -63,13 +64,15 @@ a:focus {
 
 /*-- header --*/
 .header-container {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 100;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #fafafa;
+  min-width: 340px;
 }
 
 .header-link {
@@ -119,7 +122,7 @@ a:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1140px;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 190px);
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 33px;
@@ -346,7 +349,7 @@ a:focus {
 
 .about-contact:hover,
 .about-contact:focus {
-  background-color:rgba(255,255,255,0.3);
+  background-color:rgba(255,255,255,0.5);
 }
 
 .about-contact-form {
@@ -485,17 +488,17 @@ a:focus {
   background-color: #fafafa;
 }
 
-.works-main-project-img {
+.works-main-img {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
-.works-main-project-img img {
+.works-main-img img {
   width: 100%;
   transition: all .3s ease;
 }
-.works-main-project-img img:hover {
+.works-main-img img:hover {
   transform: scale(1.1, 1.1);
 }
 

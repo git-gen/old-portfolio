@@ -1,10 +1,12 @@
 import React from 'react';
 import './../App.css';
+import Title from '../components/Title';
 
 const About = () => {
 
   return (
     <div>
+      <Title text={'About'} />
       <div className="page-title"><span>About Me</span></div>
       <div className="about-main-padding">
         <div className="about-main-container">

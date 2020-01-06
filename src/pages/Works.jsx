@@ -1,12 +1,15 @@
 import React from 'react';
 import './../App.css';
+import Title from '../components/Title';
 import Yoshinani from './../assets/works-yoshinani.jpg';
 import TechBlog from './../assets/works-blog.jpg';
 import Portfolio from './../assets/works-portfolio.jpg';
 import Bbs from './../assets/works-bbs.jpg';
+import Application from './../assets/works-application.jpg';
 
 const Works = () => (
   <div>
+    <Title text={'Works'} />
     <div className="page-title"><span>Works</span></div>
     <div className="works-main-padding">
       <div className="works-main-container">
@@ -17,8 +20,8 @@ const Works = () => (
           rel="noreferrer noopener"
         >
           <div className="works-main-project">
-            <div className="works-main-project-img">
-              <img src={Yoshinani} alt="開発ブログ" />
+            <div className="works-main-img">
+              <img src={Yoshinani} alt="よしなに" />
             </div>
             <div className="works-main-project-text">
               <h2>
@@ -46,7 +49,7 @@ const Works = () => (
           rel="noreferrer noopener"
         >
           <div className="works-main-project">
-            <div className="works-main-project-img">
+            <div className="works-main-img">
               <img src={TechBlog} alt="開発ブログ" />
             </div>
             <div className="works-main-project-text">
@@ -71,8 +74,8 @@ const Works = () => (
           rel="noreferrer noopener"
         >
           <div className="works-main-project">
-            <div className="works-main-project-img">
-              <img src={Bbs} alt="開発ブログ" />
+            <div className="works-main-img">
+              <img src={Bbs} alt="SNS掲示板" />
             </div>
             <div className="works-main-project-text">
               <h2>
@@ -97,15 +100,16 @@ const Works = () => (
           rel="noreferrer noopener"
         >
           <div className="works-main-project">
-            <div className="works-main-project-img">
-              <img src={Portfolio} alt="開発ブログ" />
+            <div className="works-main-img">
+              <img src={Portfolio} alt="ポートフォリオ" />
             </div>
             <div className="works-main-project-text">
               <h2>
                 Genki's Portfolio
             </h2>
               <p>
-                当サイト、私のポートフォリオ
+                当サイト、私のポートフォリオ<br />
+                Reactによって作成してあります
             </p>
               <div className="works-main-project-tag">
                 <div>React</div>
@@ -117,8 +121,8 @@ const Works = () => (
         </a>
 
         <div className="works-main-project">
-          <div className="works-main-project-img">
-            <img src={TechBlog} alt="開発ブログ" />
+          <div className="works-main-img">
+            <img src={Application} alt="アプリ" />
           </div>
           <div className="works-main-project-text">
             <h2>

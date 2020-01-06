@@ -17,7 +17,7 @@ class Title extends React.Component {
 
   titleTimer = async () => {
     try {
-      await wait(0.5);
+      await wait(0.7);
       this.setState({ title: false });
     } catch (e) {
       console.log(e);
