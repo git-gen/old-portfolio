@@ -291,7 +291,7 @@ a:focus {
   height: 180px;
   background: grey;
   border-radius: 50%;
-  background-image: url(./assets/about-image.svg);
+  background-image: url(./assets/profile.jpg);
   background-size: cover;
   background-position: center center;
   transition: box-shadow .5s;
