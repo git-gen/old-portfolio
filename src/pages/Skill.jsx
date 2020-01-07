@@ -57,7 +57,7 @@ const Skill = () => (
 
           <div className="skill-main-title"><span>Native App</span></div>
           <div className="skill-main-item">React<br />Native</div>
-          <div className="skill-main-rating"><Rating rate={1} /></div>
+          <div className="skill-main-rating"><Rating rate={2} /></div>
           <div className="skill-main-item">Android<br />Java</div>
           <div className="skill-main-rating"><Rating rate={1} /></div>
 
