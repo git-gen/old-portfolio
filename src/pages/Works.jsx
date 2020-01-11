@@ -63,6 +63,7 @@ const Works = () => (
               <div className="works-main-project-tag">
                 <div>Ruby on Rails</div>
                 <div>Webpacker</div>
+                <div>Javascript</div>
               </div>
             </div>
           </div>
@@ -87,6 +88,7 @@ const Works = () => (
             </p>
               <div className="works-main-project-tag">
                 <div>Ruby on Rails</div>
+                <div>Ajax</div>
                 <div>Bootstrap</div>
                 <div>jQuery</div>
               </div>
