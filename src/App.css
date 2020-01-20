@@ -313,9 +313,9 @@ a:active {
 
 .about-contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  max-width: 1140px;
+  max-width: 340px;
   padding: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -345,12 +345,6 @@ a:active {
   font-size: 1.1em;
 }
 
-@media screen and (max-width: 767px) {
-  .about-contact{
-    padding: 20px 0;
-  }
-}
-
 .about-contact:hover,
 .about-contact:active {
   background-color:rgba(255,255,255,0.5);
@@ -361,20 +355,6 @@ a:active {
   width: 60px;
   margin: auto;
   background-image: url(./assets/mail.svg);
-}
-
-.about-contact-linkedin {
-  height: 60px;
-  width: 60px;
-  margin: auto;
-  background-image: url(./assets/linkedin.svg);
-}
-
-.about-contact-twitter {
-  height: 60px;
-  width: 60px;
-  margin: auto;
-  background-image: url(./assets/twitter.svg);
 }
 
 /*-- skill --*/

@@ -25,10 +25,10 @@ const Works = () => (
             </div>
             <div className="works-main-project-text">
               <h2>
-                よしなにトップ
+                よしなに
             </h2>
               <p>
-                制作物のまとめ用サイト<br />
+                制作物のまとめ用サイト「よしなに」<br />
                 他のRailsアプリはこのサイトの一部です
             </p>
               <div className="works-main-project-tag">
@@ -107,7 +107,7 @@ const Works = () => (
             </div>
             <div className="works-main-project-text">
               <h2>
-                Genki's Portfolio
+                GW Portfolio
             </h2>
               <p>
                 当サイト、私のポートフォリオ<br />

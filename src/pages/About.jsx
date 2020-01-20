@@ -15,10 +15,10 @@ const About = () => {
               className="about-main-image"
             />
           </div>
-          <div className="about-main-title">Developer Genki</div>
+          <div className="about-main-title">Developer GW</div>
           <div className="about-main-text">
             <p>
-              はじめまして！<br />
+              はじめまして！GWです！<br />
               高校・大学で情報工学を学び、<br />
               自社開発を行なっている一部上場企業に新卒入社しました。<br />
               それからWebエンジニアとして働き始め、<br />
@@ -45,26 +45,6 @@ const About = () => {
             <div className="about-contact">
               <p>Form</p>
               <div className="about-contact-form" />
-            </div>
-          </a>
-          <a
-            href="https://jp.linkedin.com/in/%E5%85%83%E8%B2%B4-%E6%B8%A1%E9%82%89-651775195"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <div className="about-contact">
-              <p>LinkedIn</p>
-              <div className="about-contact-linkedin" />
-            </div>
-          </a>
-          <a
-            href="https://twitter.com/developer_gen"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <div className="about-contact">
-              <p>Twitter</p>
-              <div className="about-contact-twitter" />
             </div>
           </a>
         </div>
